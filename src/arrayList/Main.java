@@ -2,6 +2,7 @@ package arrayList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -62,7 +63,9 @@ public class Main {
 
 //        7. Берилген массивдердин тизмесин сорттоо үчүн Java программасын жазыңыз.
 
-         System.out.println("N-7 : "+strings.toString());
+         Collections.sort(strings);
+        System.out.println("N=7 : "+strings);
+
 
 //        8. Бир массив тизмесин экинчи масивге көчүрүү үчүн Java программасын жазыңыз.
 
@@ -72,6 +75,8 @@ public class Main {
 //        9. Массив тизмесиндеги элементтерди аралаштыруу үчүн Java программасын жазып.
 //        Маанилерин консольго чыгарыныз.
 
+        Collections.shuffle(strings);
+        System.out.println("N-9 : "+strings);
 
 
 //        10. Массив тизмесиндеги элементтерди тескери өзгөртүү үчүн Java программасын жазыңыз.
